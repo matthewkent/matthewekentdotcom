@@ -1,0 +1,11 @@
+body {
+	background: #fff;
+	font-family: Georgia, serif;
+	font-size: large;
+	line-height: 1.6em;
+}
+
+#container {
+	margin: 0 auto;
+	width: 480px;
+}
