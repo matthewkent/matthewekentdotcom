@@ -2,13 +2,20 @@
 layout: recipe
 ---
 <h1>{{ page.title }}</h1>
-<em>Credits: {{ page.credits }}</em>
+<em>Credits: {% for c in page.credits %}<a href="{{ c[1] }}">{{ c[0] }}</a>{% endfor %}</em>
 <p>Yield: {{ page.yield }}</p>
 
 <h2>Ingredients</h2>
 <ul>
 {% for i in page.ingredients %}
+{% if i[1] %}
+<h3>{{ i[0] }}</h3>
+{% for li in i[1] %}
+<li>{{ li }}</li>
+{% endfor %}
+{% else %}
 <li>{{ i }}</li>
+{% endif %}
 {% endfor %}
 </ul>
 

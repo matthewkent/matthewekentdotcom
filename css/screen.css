@@ -9,3 +9,7 @@ body {
 	margin: 0 auto;
 	width: 480px;
 }
+
+li {
+    margin: 0 10px;
+}
