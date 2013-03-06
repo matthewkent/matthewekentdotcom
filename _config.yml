@@ -1,0 +1,1 @@
+exclude: [recipe.html, recipe_data, Gemfile, Gemfile.lock]
