@@ -1,0 +1,20 @@
+---
+layout: recipe
+---
+<h1>{{ page.title }}</h1>
+<em>Credits: {{ page.credits }}</em>
+<p>Yield: {{ page.yield }}</p>
+
+<h2>Ingredients</h2>
+<ul>
+{% for i in page.ingredients %}
+<li>{{ i }}</li>
+{% endfor %}
+</ul>
+
+<h2>Steps</h2>
+<ol>
+{% for s in page.steps %}
+<li>{{ s }}</li>
+{% endfor %}
+</ol>

@@ -1,0 +1,10 @@
+---
+layout: default
+title: recipes
+---
+
+<ul>
+{% for l in page.recipe_links %}
+<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
+{% endfor %}
+</ul>
