@@ -1,0 +1,18 @@
+---
+layout: default
+title: recipes
+---
+
+<h1>Ingredients</h1>
+<ul>
+{% for i in page.ingredients %}
+<li>{{ i }}</li>
+{% endfor %}
+</ul>
+
+<h1>Steps</h1>
+<ul>
+{% for s in page.steps %}
+<li>{{ s }}</li>
+{% endfor %}
+</ul>
