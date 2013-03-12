@@ -3,7 +3,9 @@ layout: recipe
 ---
 <h1>{{ page.title }}</h1>
 <em>Credits: {% for c in page.credits %}<a href="{{ c[1] }}">{{ c[0] }}</a>{% endfor %}</em>
+{% if page.yield %}
 <p>Yield: {{ page.yield }}</p>
+{% endif %}
 
 <h2>Ingredients</h2>
 <ul>
