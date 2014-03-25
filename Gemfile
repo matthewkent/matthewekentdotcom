@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-s3'
+gem 'middleman'
+gem 'middleman-s3_sync'
