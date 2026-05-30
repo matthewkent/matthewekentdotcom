@@ -9,7 +9,7 @@
   <p class="recipe-meta">
     {% if recipe.yield %}<span class="recipe-yield">{{ recipe.yield }}</span>{% endif %}
     {% if recipe.yield and recipe.source %} &middot; {% endif %}
-    {% if recipe.source %}<span class="recipe-source">{{ recipe.source }}</span>{% endif %}
+    {% if recipe.source %}<span class="recipe-source">{% if recipe.source_url %}<a href="{{ recipe.source_url }}">{{ recipe.source }}</a>{% else %}{{ recipe.source }}{% endif %}</span>{% endif %}
   </p>
   {% endif %}
   <div class="recipe-body">

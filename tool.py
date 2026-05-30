@@ -31,6 +31,7 @@ def load_recipes():
             "slug": path.stem,
             "title": post["title"],
             "source": post.get("source"),
+            "source_url": post.get("source_url"),
             "yield": post.get("yield"),
             "content_html": markdown.markdown(post.content, extensions=["extra"]),
             "url": f"/recipes/{path.stem}/",
