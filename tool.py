@@ -15,6 +15,7 @@ TEMPLATES_DIR = REPO_ROOT / "templates"
 STATIC_DIR = REPO_ROOT / "static"
 OUTPUT_DIR = REPO_ROOT / "output"
 S3_BUCKET = "www.matthewekent.com"
+CLOUDFRONT_DISTRIBUTION_ID = "E361KYL0SNEF3J"
 
 CONTENT_TYPES = {
     ".html": "text/html; charset=utf-8",
@@ -94,6 +95,16 @@ def publish():
         count += 1
 
     click.echo(f"Published {count} files to s3://{S3_BUCKET}")
+
+    cf = boto3.client("cloudfront")
+    cf.create_invalidation(
+        DistributionId=CLOUDFRONT_DISTRIBUTION_ID,
+        InvalidationBatch={
+            "Paths": {"Quantity": 1, "Items": ["/*"]},
+            "CallerReference": str(count),
+        },
+    )
+    click.echo("Invalidated CloudFront cache")
 
 
 if __name__ == "__main__":
