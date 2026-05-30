@@ -13,7 +13,7 @@
   </p>
   {% endif %}
   <div class="recipe-body">
-    {{ recipe.content_html }}
+    {{ recipe.content_html | safe }}
   </div>
 </article>
 {% endblock %}
