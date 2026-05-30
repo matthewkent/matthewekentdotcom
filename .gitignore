@@ -1,7 +1,6 @@
-.ruby-version
-.ruby-gemset
-_site/*
-_jekyll_s3.yml
-.idea/*
-.cache/*
-build/*
+output/
+.venv/
+.DS_Store
+__pycache__/
+*.pyc
+.idea/

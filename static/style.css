@@ -1,0 +1,111 @@
+/* Placeholder styles — to be iterated with user */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #faf8f4;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #c8b89a;
+}
+
+.site-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #5a4a3a;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #1a1a1a;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto 4rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #5a4a3a;
+}
+
+h3 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Index page */
+.recipe-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-list li {
+  margin-bottom: 0.5rem;
+}
+
+.recipe-list a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.recipe-list a:hover {
+  color: #5a4a3a;
+}
+
+/* Recipe page */
+.recipe-meta {
+  font-size: 0.9rem;
+  color: #7a6a5a;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.recipe-body ul,
+.recipe-body ol {
+  padding-left: 1.5rem;
+}
+
+.recipe-body li {
+  margin-bottom: 0.35rem;
+}
+
+.recipe-body ol li {
+  margin-bottom: 0.75rem;
+}
+
+.recipe-body a {
+  color: #5a4a3a;
+}
