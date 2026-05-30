@@ -1,5 +1,6 @@
 ---
 title: Wrapples
+yield: 8–12 wrapples
 sources:
   - name: Williamsburg General Store, Gazette Net
     url: http://www.gazettenet.com/Williamsburg-General-Store-Wrapples-5097494
