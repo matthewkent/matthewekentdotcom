@@ -30,8 +30,10 @@ def load_recipes():
         recipes.append({
             "slug": path.stem,
             "title": post["title"],
-            "source": post.get("source"),
-            "source_url": post.get("source_url"),
+            "sources": (
+                post.get("sources")
+                or ([{"name": post["source"], "url": post.get("source_url")}] if post.get("source") else [])
+            ),
             "yield": post.get("yield"),
             "content_html": markdown.markdown(post.content, extensions=["extra"]),
             "url": f"/recipes/{path.stem}/",

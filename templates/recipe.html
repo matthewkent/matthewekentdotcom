@@ -5,11 +5,11 @@
 {% block content %}
 <article>
   <h1>{{ recipe.title }}</h1>
-  {% if recipe.yield or recipe.source %}
+  {% if recipe.yield or recipe.sources %}
   <p class="recipe-meta">
     {% if recipe.yield %}<span class="recipe-yield">{{ recipe.yield }}</span>{% endif %}
-    {% if recipe.yield and recipe.source %} &middot; {% endif %}
-    {% if recipe.source %}<span class="recipe-source">{% if recipe.source_url %}<a href="{{ recipe.source_url }}">{{ recipe.source }}</a>{% else %}{{ recipe.source }}{% endif %}</span>{% endif %}
+    {% if recipe.yield and recipe.sources %} &middot; {% endif %}
+    {% if recipe.sources %}<span class="recipe-source">{% for s in recipe.sources %}{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}{% if not loop.last %} &middot; {% endif %}{% endfor %}</span>{% endif %}
   </p>
   {% endif %}
   <div class="recipe-body">
