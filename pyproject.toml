@@ -8,4 +8,5 @@ dependencies = [
     "markdown>=3.4",
     "python-frontmatter>=1.0",
     "boto3>=1.28",
+    "botocore[crt]>=1.28",
 ]
