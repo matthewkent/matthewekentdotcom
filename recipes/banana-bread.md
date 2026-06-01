@@ -1,8 +1,7 @@
 ---
 title: Banana Bread
 sources:
-  - name: Flour's Famous Banana Bread, Food Network
-    url: https://www.foodnetwork.com/recipes/flours-famous-banana-bread-recipe-2015076
+  - https://www.foodnetwork.com/recipes/flours-famous-banana-bread-recipe-2015076
 yield: 1 loaf
 ---
 

@@ -5,7 +5,8 @@ Transform pasted or provided recipe text into the canonical Markdown format used
 ```markdown
 ---
 title: Recipe Title
-source: Source attribution (optional)
+sources:
+  - https://... (optional)
 yield: How much it makes (optional)
 ---
 
@@ -30,7 +31,7 @@ Optional tips, variations, or notes. (Omit this section entirely if there's noth
 
 2. Parse the raw text and extract:
    - **Title** — the recipe name
-   - **Source/attribution** — any "adapted from", "via", or credit line (optional)
+   - **Sources** — any "adapted from", "via", or credit lines. Use a `sources` list of URLs. Omit the field entirely if there's no source. Multiple sources are supported.
    - **Yield/servings** — how much it makes (optional)
    - **Ingredients** — group into `###` sub-sections only if the recipe has clearly distinct components (e.g. crust + filling, or brine + glaze). Use a flat list if it's a single component.
    - **Method steps** — number them. If the original has prose paragraphs rather than numbered steps, break them into logical steps.

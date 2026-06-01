@@ -2,12 +2,9 @@
 title: Wrapples
 yield: 8–12 wrapples
 sources:
-  - name: Williamsburg General Store, Gazette Net
-    url: http://www.gazettenet.com/Williamsburg-General-Store-Wrapples-5097494
-  - name: Williamsburg Wrapples, Food Network
-    url: https://www.foodnetwork.com/recipes/williamsburg-wrapples-2124557
-  - name: Easy Pie Dough, Serious Eats
-    url: https://www.seriouseats.com/easy-pie-dough-recipe
+  - http://www.gazettenet.com/Williamsburg-General-Store-Wrapples-5097494
+  - https://www.foodnetwork.com/recipes/williamsburg-wrapples-2124557
+  - https://www.seriouseats.com/easy-pie-dough-recipe
 ---
 
 ## Ingredients
