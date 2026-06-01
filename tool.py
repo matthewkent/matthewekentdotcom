@@ -74,7 +74,8 @@ def publish():
     if not OUTPUT_DIR.exists() or not any(OUTPUT_DIR.iterdir()):
         raise click.ClickException("output/ is empty — run 'generate' first")
 
-    s3 = boto3.client("s3")
+    session = boto3.Session(profile_name="PowerUserAccess-951408821738")
+    s3 = session.client("s3")
     count = 0
 
     for local_path in OUTPUT_DIR.rglob("*"):
@@ -96,7 +97,7 @@ def publish():
 
     click.echo(f"Published {count} files to s3://{S3_BUCKET}")
 
-    cf = boto3.client("cloudfront")
+    cf = session.client("cloudfront")
     cf.create_invalidation(
         DistributionId=CLOUDFRONT_DISTRIBUTION_ID,
         InvalidationBatch={
