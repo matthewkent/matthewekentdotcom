@@ -47,9 +47,9 @@ The step to beat the eggs and sugar is critical to get the right texture — do 
 
 Sour cream can be substituted with similar dairy products such as crème fraîche or Greek yogurt.
 
-Fully ripe bananas are necessary for the proper texture and flavor; underripe bananas will yield a different result.
+Fully ripe bananas are necessary for the proper texture and flavor.
 
-An aluminum loaf pan will yield the best results — do not use a glass pan.
+Use an aluminum loaf pan for the best results. Do not use a glass pan.
 
 ## Variations
 
