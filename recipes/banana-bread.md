@@ -7,6 +7,7 @@ yield: 1 loaf
 
 ## Ingredients
 
+### Single batch
 - 200g all-purpose flour
 - 1 teaspoon baking soda
 - 1/4 teaspoon ground cinnamon
@@ -17,6 +18,18 @@ yield: 1 loaf
 - 12 oz very ripe bananas, mashed
 - 2 tablespoons sour cream
 - 1 teaspoon vanilla extract
+
+### Double batch
+- 400g all-purpose flour
+- 2 teaspoons baking soda
+- 1/2 teaspoon ground cinnamon
+- 1 teaspoon salt
+- 400g sugar
+- 4 eggs
+- 230g neutral oil
+- 24 oz very ripe bananas, mashed
+- 4 tablespoons sour cream
+- 2 teaspoons vanilla extract
 
 ## Method
 
@@ -38,4 +51,17 @@ Fully ripe bananas are necessary for the proper texture and flavor; underripe ba
 
 An aluminum loaf pan will yield the best results — do not use a glass pan.
 
-This recipe can be doubled and baked in a 13-inch Pullman pan for a large bakery-style loaf.
+## Variations
+
+### Chocolate chip
+- Mix 4 oz mini chocolate chips into batter.
+
+### Chocolate cake
+- Mix 25g cocoa powder into dry ingredients.
+
+### Double chocolate
+- Combine the chocolate cake and chocolate chip variations together.
+
+### Bakery-style XL loaf
+- Use double batch quantities.
+- Bake in a 13-inch Pullman pan at 350°F for 75 minutes.
