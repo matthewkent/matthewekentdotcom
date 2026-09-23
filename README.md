@@ -26,7 +26,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 ```bash
 uv run python tool.py publish
 ```
-Uploads `output/` to S3 and invalidates the CloudFront cache. Run `generate` first.
+Uploads `output/` to S3 and invalidates the CloudFront cache. Run `generate` first. If publishing fails with `TokenRetrievalError: Token has expired`, refresh your SSO session with `aws sso login --sso-session matthewekent`.
 
 **Add a recipe**
 ```
